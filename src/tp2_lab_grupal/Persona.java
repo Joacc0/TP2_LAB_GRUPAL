@@ -59,7 +59,7 @@ public class Persona {
     
 }
     public void hablar(){
-        
+        System.out.println("Hola, mi nombre es: " + nombre + " " + apellido + " y tengo " + edad);
     }
 
     //ToString
