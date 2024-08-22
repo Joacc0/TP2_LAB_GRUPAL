@@ -4,7 +4,7 @@ package tp2_lab_grupal;
 
 public class Persona {
 
-    //Atributos            PERSONA TIENE UN RELOJ 
+    //Atributos 
     private String nombre;
     private String apellido; 
     private int edad; 
@@ -54,7 +54,6 @@ public class Persona {
     } //Ver si los podemos usar
     
     //Métodos adicionales 
-    
     public void comer() {
         System.out.println(nombre + " esta comiendo a las " + reloj1.getHora());
 }

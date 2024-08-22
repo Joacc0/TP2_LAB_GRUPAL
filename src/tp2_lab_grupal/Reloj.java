@@ -1,25 +1,26 @@
 package tp2_lab_grupal;
 
 import java.time.LocalDate;
+import java.time.LocalTime;
 import java.util.Calendar;
 
 public class Reloj {
 
     //Atributos
     private int dia; 
-    private int hora;
+    private LocalTime hora;
     private String modelo;
     private long numSerie; 
 
     //Constructor vacio
     public Reloj() {
-        horaJava();
+     
     }
     
     //Constructor
-    public Reloj(int dia, int hora, String modelo, long numSerie) {
+    public Reloj(int dia, String modelo, long numSerie) {
         this.dia = dia;
-        this.hora = hora;
+        hora = LocalTime.now().withNano(0); 
         this.modelo = modelo;
         this.numSerie = numSerie;
     }
@@ -28,7 +29,7 @@ public class Reloj {
     public int getDia() {
         return dia;
     }
-    public int getHora() {
+    public LocalTime getHora() {
         return hora;
     }
 
@@ -37,7 +38,7 @@ public class Reloj {
         this.dia = dia;
     }
 
-    public void setHora(int hora) {
+    public void setHora() {
         this.hora = hora;
     }
     
@@ -46,9 +47,14 @@ public class Reloj {
         dia ++; 
     }
     
-    public void incrementarHora(double hora){
-        hora ++; 
-    }
+public void incrementarHora() {
+    
+    System.out.println("Hora actual: " + hora);    
+    
+    hora = hora.plusHours(1);
+    
+    System.out.println("La hora nueva es: " + hora);
+        } 
     
     public void limpiarPantalla(){
     System.out.println(" --- Pantalla del Reloj Limpia --- ");
@@ -58,14 +64,14 @@ public class Reloj {
     System.out.println("Hora: " + hora);
     }
     
-    public void horaJava(){
-        
-                Calendar date = Calendar.getInstance();
-                hora = date.get(Calendar.HOUR);
-                dia= date.get(Calendar.DAY_OF_MONTH);
-  //              int minutos = date.get(Calendar.MINUTE);
-                
-    }      
+//    public void horaJava(){
+//        
+//                Calendar date = Calendar.getInstance();
+//                hora = date.get(Calendar.HOUR);
+//                dia= date.get(Calendar.DAY_OF_MONTH);
+//  //              int minutos = date.get(Calendar.MINUTE);
+//                
+//    }      
     
      
 }

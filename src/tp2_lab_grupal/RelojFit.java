@@ -4,7 +4,7 @@ package tp2_lab_grupal;
 public class RelojFit extends Reloj{
 
     //Constructor 
-    public RelojFit(int dia, int hora, String modelo, long numSerie){
+    public RelojFit(int dia,  hora, String modelo, long numSerie){
         super(dia, hora, modelo, numSerie);
         
     }
