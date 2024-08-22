@@ -49,8 +49,13 @@ public class Reloj {
     }
     
     public void limpiarPantalla(){
-        
+    System.out.println(" --- Pantalla del Reloj Limpia --- ");
+    System.out.println("Modelo: " + modelo);
+    System.out.println("Número de Serie: " + numSerie);
+    System.out.println("Día: " + dia);
+    System.out.println("Hora: " + hora);
     }
+    
            
     //El local date es para el manejo de tipos fechas 
 }
