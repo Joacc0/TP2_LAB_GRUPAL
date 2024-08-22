@@ -56,12 +56,12 @@ public class Persona {
     //Métodos adicionales 
     
     public void comer() {
-    
+        System.out.println(nombre + " esta comiendo a las " + reloj1.getHora());
 }
     public void hablar(){
         
     }
-
+    
     //ToString
     @Override
     public String toString() {
