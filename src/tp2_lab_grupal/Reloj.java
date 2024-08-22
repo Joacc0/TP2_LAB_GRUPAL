@@ -1,6 +1,7 @@
 package tp2_lab_grupal;
 
 import java.time.LocalDate;
+import java.util.Calendar;
 
 public class Reloj {
 
@@ -12,6 +13,7 @@ public class Reloj {
 
     //Constructor vacio
     public Reloj() {
+        horaJava();
     }
     
     //Constructor
@@ -56,7 +58,15 @@ public class Reloj {
     System.out.println("Hora: " + hora);
     }
     
-           
+    public void horaJava(){
+        
+                Calendar date = Calendar.getInstance();
+                hora = date.get(Calendar.HOUR);
+                dia= date.get(Calendar.DAY_OF_MONTH);
+  //              int minutos = date.get(Calendar.MINUTE);
+                
+    }      
+    
      
 }
 //El local date es para el manejo de tipos fechas
