@@ -23,19 +23,19 @@ public class Reloj {
     }
 
     //Getters
-    public LocalDate getDia() {
+    public int getDia() {
         return dia;
     }
-    public LocalDate getHora() {
+    public int getHora() {
         return hora;
     }
 
     //Setters (VER SI PUEDO USAR ESTOS MÉTODOS)
-    public void setDia(LocalDate dia) {
+    public void setDia(int dia) {
         this.dia = dia;
     }
 
-    public void setHora(LocalDate hora) {
+    public void setHora(int hora) {
         this.hora = hora;
     }
     
